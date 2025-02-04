@@ -1,0 +1,76 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: 'Arial', serif;
+    background: -webkit-linear-gradient(90deg,#4b3126,#a6755b,#e8be89,#d1d0b5); /* Chrome 10-25, Safari 5.1-6 */ background: linear-gradient(90deg,#4b3126,#a6755b,#e8be89,#d1d0b5); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.game {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    max-width: 1000px;
+    padding: 40px 15px;
+    margin: 0 auto;
+}
+
+.card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+    background: -webkit-linear-gradient(90deg,#b09d8a,#b7a897,#917c68); /* Chrome 10-25, Safari 5.1-6 */ background: linear-gradient(90deg,#b09d8a,#b7a897,#917c68); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    border: 3px solid black;
+    box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5); 
+    height: 240px;
+    font-size: 0;
+    color: transparent;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: transform .1s ease-in-out;
+}
+
+.card:hover {
+    transform: scale(1.01);
+}
+
+.card:active {
+    transform: scale(1.01);
+    background: -webkit-linear-gradient(180deg,#dceae9,#504f4e); /* Chrome 10-25, Safari 5.1-6 */ background: linear-gradient(180deg,#dceae9,#504f4e); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.open {
+    font-size: 36px;
+    color: #fff;
+    background: -webkit-linear-gradient(180deg,#dceae9,#504f4e); /* Chrome 10-25, Safari 5.1-6 */ background: linear-gradient(180deg,#dceae9,#504f4e); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    cursor: default;
+}
+
+.open:active {
+    background: rgb(56, 56, 177);
+}
+
+.success {
+    font-size: 36px;
+    color: #fff;
+    background: rgb(26, 161, 32);
+    cursor: default;
+}
+
+.success:active {
+    background: rgb(26, 161, 32);
+}
+
